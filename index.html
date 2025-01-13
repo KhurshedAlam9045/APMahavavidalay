@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A.P. Mahavidhalay Laxmipur Kushinagar</title>
+    <!--The bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--The Link CDN Slider-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <!--The CDN Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+        integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="py-3 sticky sticky-top" style="background-color: var(--top-header-bg);padding: 0px; margin: 0px;"
+        data-toggle="sticky-onscroll">
+        <nav class="navbar  navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html" style="color:var(--top-text-color);">A.P
+                    Mahavidhalay</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end mx-5" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link active txt-header text-white" aria-current="page"
+                                href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link txt-header" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link txt-header" href="register.html">Register</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle txt-header" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Course
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item txt-header" href="#"> >&nbsp;Bachelor of Arts (BA)</a></li>
+                                <li><a class="dropdown-item txt-header" href="#"> >&nbsp;Bachelor of Science (B.Sc)</a></li>
+                                <li><a class="dropdown-item txt-header" href="#"> >&nbsp;Bachelor of Commerce (B.Com)</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle txt-header" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Faculties
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item txt-header" href="#"> >&nbsp;Faculty of Arts</a></li>
+                                <li><a class="dropdown-item txt-header" href="#"> >&nbsp;Faculty of Science</a></li>
+                                <li><a class="dropdown-item txt-header" href="#"> >&nbsp;Faculty of Commerce</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link txt-header" href="gallery.html">Photo Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link txt-header" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link txt-header" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link txt-header" href="feedback.html">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--==================Main pages Start ===========================-->
+    <!-- @section('main-page')
+    @show -->
+    <!---==========================The Enquriy Section Form ======================-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Enqery Form</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="form-group mb-2">
+                                    <label for="" style="color:#777777;font-size:1.2rem;">full name.<sup
+                                            class="text-danger">*</sup></label>
+                                    <input type="text" name="fullname" placeholder="Enter fullname.." class="mb-2"
+                                        id="enquiry-input">
+                                </div>
+                                <div class="form-group mb-2">
+                                    <label for="" style="color:#777777;font-size:1.2rem;">Email Id.<sup
+                                            class="text-danger">*</sup></label>
+                                    <input type="text" name="email" placeholder="Enter email id.." class="mb-2"
+                                        id="enquiry-input">
+                                </div>
+                                <div class="form-group mb-2">
+                                    <label for="" style="color:#777777;font-size:1.2rem;">Phone Number<sup
+                                            class="text-danger">*</sup></label>
+                                    <input type="number" name="fullname" placeholder="Enter mobile no.." class="mb-2"
+                                        id="enquiry-input">
+                                </div>
+                                <div class="form-group  mb-3">
+                                    <label for="" style="color:#777777;font-size:1.2rem;">Course<sup
+                                            class="text-danger">*</sup></label>
+                                    <select name="" id="enquiry-input" class="mb-2">
+                                        <option value="" selected>Please select course..</option>
+                                        <option value="B.A">B.A</option>
+                                        <option value="B.COM">B.COM</option>
+                                        <option value="B.SC">B.SC</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group  mb-3">
+                                    <label for="" style="color:#777777;font-size:1.2rem;">Message<sup
+                                            class="text-danger">*</sup></label>
+                                    <textarea name="" id="textarea" placeholder="Write message.."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    
+                    <button type="button"  id="register-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---==========================The Enquriy Section Form ======================-->
+    <div class="hero-section">
+        <div class="bg-holder" style="background-image: url('hero.jpg');"><video class="bg-video"
+                autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline">
+                <source src="Techpile_video.mp4" type="video/mp4" />
+                <source src="images/Techpile_video.mp4" type="video/mp4" />
+                <source src="Techpile_video.mp4" type="video/mp4" />
+            </video></div>
+        <div class="container">
+            <div class="row justify-content-end align-items-center vh-50" style="padding-top:120px;">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a class="link-300 btn d-block w-100 text-uppercase ls-2" href="register.html"
+                        style="background: var(--bg-color); border-color: rgba(255, 255, 255, 0.35);color:var(--text-color);">Apply</a>
+                    <a class="link-300 btn d-block w-100 text-uppercase ls-2 mt-2" href="#" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        style="background: var(--bg-color); border-color: rgba(255, 255, 255, 0.35);color:var(--text-color);">Enqiury</a>
+                    <a class="link-300 btn d-block w-100 text-uppercase ls-2 mt-2" href="adminssion.html"
+                        style="background: var(--bg-color); border-color: rgba(255, 255, 255, 0.35);color:var(--text-color);">Addmission</a>
+                </div>
+            </div>
+        </div><!-- end of .container-->
+    </div>
+
+    <section class="pt-3 text-center" style="margin-top:160px;background-color:var(--bg-footer);">
+        <div class="container-fluid">
+            <marquee behavior="" direction="left" scrollamount="15">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <p class="mb-0 fs-4 text-white"><strong style="color:var(--text-footer)">A.P Mahavidhalay
+                            </strong>Laxmipur Padrauna
+                            Kushinagar 274303</p>
+                    </div>
+                    <div class="col-12">
+                        <hr class="text-300 mb-0" />
+                    </div>
+                </div>
+            </marquee>
+        </div>
+    </section>
+    <!--The Our Services Section start-->
+    <div class="our-services-top">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <section class="our-services">
+                    <div class="our-child-services">
+                        <p><a href="" class="text-decoration-none text-white fw-bold">Coming Soon</a></p>
+                    </div>
+                </section>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <section class="our-services-right">
+                    <div class="our-child-services-right">
+                        <div class="notic-top">
+                            <h1>Notic</h1>
+                        </div>
+
+                        <div class="row pt-3">
+                            <div class="col-lg-2 col-md-2 col-sm-12"></div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-12"
+                                style="overflow-x: scroll;overflow:hidden;height:280px;">
+                                <marquee behavior="" direction="up" scrollamount="10">
+                                    <ul class="nav flex-column p-3 mb-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href=""><img
+                                                    src="new-gif.gif"
+                                                    alt="">&nbsp;&nbsp;B.A 1st Years Result 2024</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href=""><img
+                                                    src="new-gif.gif"
+                                                    alt="">&nbsp;&nbsp;B.A 2st Years Result 2024</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href=""><img
+                                                    src="new-gif.gif"
+                                                    alt="">&nbsp;&nbsp;B.A 3st Years Result 2024</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href=""><img
+                                                    src="new-gif.gif"
+                                                    alt="">&nbsp;&nbsp;B.Sc 1st Years Result 2024</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href=""><img
+                                                    src="new-gif.gif"
+                                                    alt="">&nbsp;&nbsp;B.Sc 2st Years Result 2024</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href=""><img
+                                                    src="new-gif.gif"
+                                                    alt="">&nbsp;&nbsp;B.Sc 3st Years Result 2024</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href=""><img
+                                                    src="new-gif.gif"
+                                                    alt="">&nbsp;&nbsp;B.Com 1st Years Result 2024</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href=""><img
+                                                    src="new-gif.gif"
+                                                    alt="">&nbsp;&nbsp;B.Com 2st Years Result 2024</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" href=""><img
+                                                    src="new-gif.gif"
+                                                    alt="">&nbsp;&nbsp;B.Com 3st Years Result 2024</a>
+                                        </li>
+                                    </ul>
+                                </marquee>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-12"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!--The Our Services Section Ends-->
+    <!--The Our Course Section start-->
+    <div class="our-course">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3 p-3">
+                    <div class="card box-1">
+                        <div class="box-child">
+                            <img src="circle.svg" alt="" class="img-fluid"
+                                id="ba-bg">
+                            <div class="card-body">
+                                B.A
+                            </div>
+                            <a class="btnn" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3 p-3">
+                    <div class="card box-2">
+                        <div class="box-child">
+                            <img src="circle.svg" alt="" class="img-fluid"
+                                id="ba-bg">
+                            <div class="card-body1">
+                                B.COM
+                            </div>
+                            <a class="btnn" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3 p-3">
+                    <div class="card box-3">
+                        <div class="box-child">
+                            <img src="circle.svg" alt="" class="img-fluid"
+                                id="ba-bg">
+                            <div class="card-body3">
+                                B.SC
+                            </div>
+                            <a class="btnn" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3 p-3">
+                    <div class="card box-4">
+                        <div class="box-child">
+                            <img src="circle.svg" alt="" class="img-fluid"
+                                id="ba-bg">
+                            <div class="card-body4">
+                                M.TECH
+                            </div>
+                            <a class="btnn" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--The Our Course Section start-->
+    <!--The Count Section Start-->
+    <div class="count-section">
+        <div class="container container-count">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 p-3 mb-2 text-center">
+                    <span style="font-size:1.5rem;">55</span>
+                    <h1>Teacher</h1>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 p-3 mb-2 text-center">
+                    <span style="font-size:1.5rem;">1155</span>
+                    <h1>Students</h1>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12 p-3 mb-2 text-center">
+                    <span style="font-size:1.5rem;">5</span>
+                    <h1>Course</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--The Count Section End-->
+    <!--******* The Student Say Section Start ***********-->
+    <div class="student-say">
+        <div class="container-student">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 text-center text-white fw-bold">
+                        <h4 class="pt-5">Student Review
+                        </h4>
+                        <img src="about-underline.svg" alt="" class="img-fluid"
+                            style="width: 150px;transform:translateY(-1rem);">
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-12"></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+                        <p class="fs-1 fw-bold text-white">500+ Students Say About Our College</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-12"></div>
+                    <!---Student--->
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 text-white pt-5">
+                        <div class="card" style="background-color:rgba(255,255,255,1);">
+                            <img src="khurshed.jpg" alt=""
+                                style="height:100px;width:100px;border-radius:100%;position: relative;top:-3.5rem;left:9.5rem;">
+                            <div class="card-body p-5"
+                                style="text-align:justify;font-size:1rem;transform:translateY(-3rem);">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda, sapiente
+                                animi voluptates illo tempore ab molestiae corporis aperiam dolore amet repellendus
+                                corrupti, omnis sed id harum quidem aliquid eum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 pt-5">
+                        <div class="card" style="background-color:rgba(255,255,255,1);">
+                            <img src="khurshed.jpg" alt=""
+                                style="height:100px;width:100px;border-radius:100%;position: relative;top:-3.5rem;left:9.5rem;">
+                            <div class="card-body p-5"
+                                style="text-align:justify;font-size:1rem;transform:translateY(-3rem);">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda, sapiente
+                                animi voluptates illo tempore ab molestiae corporis aperiam dolore amet repellendus
+                                corrupti, omnis sed id harum quidem aliquid eum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 pt-5">
+                        <div class="card" style="background-color:rgba(255,255,255,1);">
+                            <img src="khurshed.jpg" alt=""
+                                style="height:100px;width:100px;border-radius:100%;position: relative;top:-3.5rem;left:9.5rem;">
+                            <div class="card-body p-5"
+                                style="text-align:justify;font-size:1rem;transform:translateY(-3rem);">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, assumenda, sapiente
+                                animi voluptates illo tempore ab molestiae corporis aperiam dolore amet repellendus
+                                corrupti, omnis sed id harum quidem aliquid eum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--******* The Student Say About Section Ends ***********-->
+    <!---*******The Askes Question Section start **************-->
+    <div class="ask-question-section bg-white">
+        <div class="container" style="max-width:1200px;padding-top:3rem;">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <h5 style="color:#e13237;font-size:1.5rem;font-weight:bold;"><b>Asked Question</b></h5>
+                    <div class="under"></div>
+                    <h1 style="color: black;font-weight:bold;margin-top:1.5rem;">
+                        Frequntaly Ashek <br> Question
+                    </h1>
+                    <div class="card-home-ask">
+                        <h3 style="padding-top: 2rem;font-size:1.2rem;padding-left:5px;padding-right:5px;"><i
+                                class="fa-solid fa-xmark"
+                                style="height: 2rem;width:2rem;border-radius:100%;"></i>&nbsp;&nbsp;&nbsp; What Program
+                            does the College</h3>
+                        <p style="padding:0rem 1rem 0rem 1rem;text-align:justify;">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Consectetur temporibus accusamus nisi
+                            perspiciatis numquam in reiciendis.</p>
+                    </div>
+                    <h5><i class="fa-solid fa-arrow-right mt-4"></i>&nbsp;&nbsp;How do I apply for admissions?</h5>
+                    <hr class="me-auto">
+                    <h5><i class="fa-solid fa-arrow-right mt-4"></i>&nbsp;&nbsp;What is the student-to-faculty ratio?</h5>
+                    <hr class="me-auto">
+                    <h5><i class="fa-solid fa-arrow-right mt-4"></i>&nbsp;&nbsp;How can I get involved in campus life?</h5>
+                    <hr class="me-auto">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                    <img src="boys.png" alt="" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---*******The Askes Question Section Ends **************-->
+
+    <!--- Our Teacher Section Start --->
+    <section class="teacher-section">
+        <div class="teacher-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="text-center" style="color:var(--text-footer);"> Our Teacher </h1>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-md-offset-2 col-md-12 col-sm-12">
+                        <div id="testimonial-slider" class="owl-carousel">
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="khurshedalam2.jpg" alt="">
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, veritatis. Earum odit
+                                    iusto et cupiditate, eos incidunt a dignissimos quod veniam recusandae temporibus, ipsa
+                                    non,
+                                    ipsam quidem reiciendis repellendus sequi.
+                                </p>
+                                <h3 class="title">Khurshed Alam
+                                    <span class="post"> - Physices</span>
+                                </h3>
+                            </div>
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="khurshed.jpg" alt="">
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, veritatis. Earum odit
+                                    iusto et cupiditate, eos incidunt a dignissimos quod veniam recusandae temporibus, ipsa
+                                    non,
+                                    ipsam quidem reiciendis repellendus sequi.
+                                </p>
+                                <h3 class="title">Nurshed Alam
+                                    <span class="post"> - Chemistry</span>
+                                </h3>
+                            </div>
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="Khurshedalam.jpg" alt="">
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, veritatis. Earum odit
+                                    iusto et cupiditate, eos incidunt a dignissimos quod veniam recusandae temporibus, ipsa
+                                    non,
+                                    ipsam quidem reiciendis repellendus sequi.
+                                </p>
+                                <h3 class="title">Jamshed Alam
+                                    <span class="post"> - English</span>
+                                </h3>
+                            </div>
+                            <div class="testimonial">
+                                <div class="pic">
+                                    <img src="khurshed.jpg" alt="">
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, veritatis. Earum odit
+                                    iusto et cupiditate, eos incidunt a dignissimos quod veniam recusandae temporibus, ipsa
+                                    non,
+                                    ipsam quidem reiciendis repellendus sequi.
+                                </p>
+                                <h3 class="title">Anwer Ali
+                                    <span class="post"> - History</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=====================Main pages ends ===============================-->
+    <!--====================The Footer Top Section start=========================-->
+    <div id="top-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-12 col-12"></div>
+                <div class="col-lg-4 col-md-3 col-sm-12 col-12">
+                    <img src="top-booter-boy.png" alt=""
+                        class="img-fluid h-100 w-75" id="subscriber-img">
+                </div>
+                <div class="col-lg-5 col-md-4 col-sm-12 col-12 ">
+                    <h5 style="color:white;font-size:1.4rem;"><b>Newsletter Subscribe</b></h5>
+                    <div class="top-foot-under"></div>
+                    <h2 style="color: white;font-weight:bold;font-size:2.5rem;padding-top:2rem;"><b>Get Started With
+                            College to <br> bright your career!</b></h2>
+                    <div class="d-flex">
+                        <input type="text" class="mb-2" id="top-botton-newsletter"
+                            placeholder="Email Address.">
+                        <button type="submite" id="submit-btn">Subscriber</button>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-1 col-sm-12 col-12"></div>
+            </div>
+        </div>
+    </div>
+    <!--====================The Footer Top Section ends=========================-->
+
+    <!--The Footer Section-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-3">
+                    <h1>Address</h1>
+                    <p class="text-white pt-2">A.P Mahavidhalay Laxmipur Kushinagar 274303</p>
+                    <p class="w-100" style="text-align:justify;">Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Reprehenderit porro praesentium unde ad, molestiae hic quibusdam facilis mollitia odio
+                        suscipit fugiat tempore! Ullam, quos! Sunt aspernatur dolorum saepe deserunt molestias.</p>
+                    <div class="socail-media pt-2">
+                        <a href=""><img src="facebook.svg" alt=""
+                                title="Facebook"></a>
+                        <a href=""><img src="youtube.svg" alt=""
+                                title="Youtube" class="mx-2"></a>
+                        <a href=""><img src="twitter.svg'" alt=""
+                                title="Twitter" class="mx-2"></a>
+                        <a href=""><img src="linkedin.svg" alt=""
+                                title="Linkedin" class="mx-2"></a>
+                        <a href=""><img src="assets/images/instagram.svg" alt=""
+                                title="Instagram" class="mx-2"></a>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <h1>Improtent link</h1>
+                    <ul class="nav flex-column nav-underline w-25">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: white;" aria-current="page"
+                                href="index.html">Home</a>
+                            <a class="nav-link text-white" href="index.html">Home</a>
+                            <a class="nav-link text-white" href="about.html">About</a>
+                            <a class="nav-link text-white" href="contact.html">Conatct</a>
+                            <a class="nav-link text-white" href="register.html">Register</a>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                <div class="col-lg-1 col-md-1 col-sm-1"></div>
+                <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <h1>follow Us</h1>
+
+                    <img src="hero.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <hr class="w-auto border border-1 bg-white opacity-100">
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center pt-2">
+                    <p>&copy; Developed By Khurshed Alam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scroll Top Start-->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- Scroll Top End-->
+    <!-- The Modal start-->
+    <div class="modal" id="myModal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <img src="hero.jpg" alt="Image Preview"
+                        style="width:100%; height:auto;">
+                </div>
+                <!-- Modal footer -->
+            </div>
+        </div>
+    </div>
+
+    
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $('#myModal').modal('show');
+        });
+    </script>
+    <!-- The Model Ends-->
+
+    <script>
+        (function() {
+            var options = {
+                hash_id: '3PQ3R'
+            };
+            var proto = 'https://static.getbutton.io';
+            var s = document.createElement('script');
+            s.defer = true;
+            s.src = proto + '/widget/bundle.js?id=' + options.hash_id;
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        })();
+
+        let scrollTop = document.querySelector('.scroll-top');
+        function toggleScrollTop() {
+            if (scrollTop) {
+                window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+            }
+        }
+        scrollTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        window.addEventListener('load', toggleScrollTop);
+        document.addEventListener('scroll', toggleScrollTop);
+    </script>
+    <!-- /GetButton.io widget -->
+    <!--==========================The Bootstrap Js Start======================-->
+    <!-- <script src="{{ asset('assets/js/bootstrap.bundle.js') }}"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!--==========================The Bootstrap Js Ends======================-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#testimonial-slider").owlCarousel({
+                items: 3,
+                itemsDesktop: [1000, 2],
+                itemsDesktopSmall: [979, 1],
+                itemsTablet: [768, 1],
+                pagination: false,
+                navigation: true,
+                navigationText: ["", ""],
+                autoPlay: true
+            });
+        });
+    </script>
+</body>
+
+</html>
