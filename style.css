@@ -1,0 +1,798 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", serif;
+}
+:root{
+     /* --bg-color: rgba(0, 33, 71, 0.9); */
+     --bg-color:rgba(255,248,178,.89);
+     --text-color:  rgba(225, 50, 55, 1);
+     --bg-footer:rgba(0, 51, 102, 0.9);
+     --text-footer:rgba(255,255,255,1);
+     --top-header-bg: rgba(173, 1, 25, 0.8);
+     --top-text-color:rgba(255,255,255,1);
+     --top-dropdown-bg:rgba(173, 1, 25, 0.5);
+}
+.dropdown .dropdown-menu{
+  /* background-image: url('images/hero.jpg'),rgba(0,0, 0, 0.85); */
+  /* background-image: url('images/hero.jpg'), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)); */
+  background-repeat: no-repeat;
+  /* background-color: rgba(0,0, 0, 0.85); */
+  display: none;
+  width: 400px;
+  background-color: var(--top-dropdown-bg);
+  
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu:hover .dropdown-item{
+  color: var(--top-header-bg);
+}
+.bg-holder .bg-video {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 500px;
+    min-width: 100%;
+  }
+  .bg-holder {
+    position: absolute;
+    width: 100%;
+    min-height:500px;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    will-change: transform, opacity, filter;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  .txt-header{
+    color: var(--top-text-color);
+    font-weight: 700;
+  }
+.txt-header:hover{
+  color:white;
+}
+
+  /**The footer**/
+  .footer{
+    background-color: var(--bg-footer);
+    color: var(--text-footer);
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    /* margin-top: 180px; */
+  }
+.place{
+  background-color: #f0f0f0;
+}
+/**============================= The Enquiry Form Popup start ===============================**/
+#enquiry-input{
+  height: 3rem;
+  padding:1rem;
+  border:1px solid lightgrey;
+  border-radius: 10px;
+  width: 100%;
+   font-size: 1em;
+}
+
+/**============================= The Enquiry Form Popup start ===============================**/
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  left: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  line-height: 49px;
+  background-color:#fff;
+  box-shadow: 0 2px 2px 0 #00000024, 0 1px 5px 0 #0000001f, 0 3px 1px -2px #0003;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: black;
+  line-height: 0;
+}
+
+.scroll-top i:hover {
+  color: black;
+}
+
+.scroll-top:hover {
+  background-color: white;
+  /* color: var(--contrast-color); */
+  color: var(--top-header-bg);
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
+}
+
+/* topbar css */
+.top-bar {
+  background-color: #1a1a1a;
+  /* Dark background */
+  color: white;
+  padding: 15px 0;
+  font-size: 0.9rem;
+
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.top-bar .social-icons i {
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+/* topbar end */
+
+/**=====================The Footer top form section===============================================**/
+#top-footer{
+  background-color: #103025;
+  height: auto;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.top-foot-under{
+  height:0.1rem;
+  width:14rem;
+  background-color: white;
+}
+#top-botton-newsletter{
+  height: 4rem;
+  width: 100%;
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: .8rem;
+  padding:1rem;
+  margin-top: 2rem;
+}
+#submit-btn{
+  position: relative;
+  height: 4rem;
+  width: 150px;
+  color: white;
+  background: #e13237;
+  padding: 1rem;
+  /* font-size: 1rem; */
+  margin-top: 2rem;
+  border-radius: 0.8rem;
+  left: -23%;
+  border: none;
+}
+#subscriber-img{
+  position: relative;
+  top:2.9rem;
+}
+/**======================The Footer top form section ends=======================================*/
+/**======================== The Register form about Section Start================================**/
+/**======================== Register form Only Section  Start====================================*/
+.register-form-bg{
+  background-image: url('register-form-bg.jpg');
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+ background-size: cover;
+ position: relative;
+}
+.register-form-bg .register-form-desc h2{
+      position: relative;
+      top: 8rem;
+      text-align: center;
+      font-size: 2rem;
+      color: var(--top-text-color);
+      font-weight: bold;
+}
+.common-bg{
+  background-color: var(--top-header-bg);
+  height: 3.5rem;
+  width: 100%;
+}
+.common-back{
+  position: relative;
+  width:18rem;
+  height: 3.5rem;
+  background-color: #103025;
+}
+
+.common-back a{
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+  position: relative;
+  top:1rem;
+  left: 1.5rem;
+  font-weight: 600;
+}
+/****/
+
+#register-input{
+  height: 4rem;
+  padding:1.5rem;
+  border:1px solid lightgrey;
+  border-radius: 10px;
+  width: 100%;
+   font-size: 1em;
+}
+#register-btn{
+  height: 3rem;
+  background-color: #e13237;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  width: 100%;
+}
+#textarea{
+  height: 5.5rem;
+  padding:1.5rem;
+  border:1px solid lightgrey;
+  border-radius: 10px;
+  width: 100%;
+   font-size: 1em;
+}
+/**======================== Register form Only Section  Ends====================================*/
+.place-inputs{
+  height: 50px;
+  width: 100%;
+  border: 1.2px solid rgba(255, 255, 255, 1);
+  background-color: rgba(0,0, 0, 0.3);
+  color: rgba(255, 255, 255, 1);
+  padding-left: 25px;
+  font-size: 1.3rem;
+}
+.place-inputst{
+  width: 100%;
+  border: 1.2px solid rgba(255, 255, 255, 1);
+  background-color: rgba(0,0, 0, 0.3);
+  color: rgba(255, 255, 255, 1);
+  padding-left: 25px;
+  font-size: 1.3rem;
+}
+.place-botton{
+  height: 50px;
+  width: 100%;
+  background-color: #ff7350;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.3rem;
+  text-align: center;
+  border: 1.2px solid #ff7350;
+  border-radius: 10px;
+}
+.place-botton:hover{
+  height: 50px;
+  width: 100%;
+  background-color: green;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.3rem;
+  text-align: center;
+  border: 1.2px solid green;
+  border-radius: 10px;
+}
+/**======================== The Register form about Section End================================**/
+/**========================The Our Services Section Start===========================**/
+.our-services-top{
+  background-color: rgba(0, 0, 0, 1);
+
+}
+.our-services{
+   background-image: url('degree1.jpg');
+   height: 400px;
+   width: 100%;
+   background-position: center center;
+   background-size: cover;
+   /* margin-top: 5px; */
+   background-attachment: fixed;
+   position: relative;
+   
+}
+.our-services .our-child-services{
+  background-color: rgba(0,0, 0, 0.8);
+  height: 400px;
+  width: 100%;
+  /* margin-top: 5px; */
+}
+.our-child-services p{
+  position: absolute;
+  text-align: center;
+  padding-top: 12px;
+  color: #f0f0f0;
+  height: 50px;
+  font-size: 1rem;
+  width: 150px;
+  background-color: #ff7350;
+  left: 35%;
+  top: 40%;
+}
+.our-services-right{
+  background-image: url('degree2.jpg');
+   height: 400px;
+   width: 100%;
+   background-position: center center;
+   background-size: cover;
+   /* margin-top: 5px; */
+   background-attachment: fixed;
+   position: relative;
+}
+.our-services-right .our-child-services-right{
+  background-color: rgba(0,0, 0, 0.8);
+  height: 400px;
+  width: 100%;
+  /* margin-top: 5px; */
+}
+.our-child-services-right .notic-top{
+  background-color: rgba(0, 51, 102, 0.5);
+  color: rgba(255,255,255,1);
+  text-align: center;
+}
+/**========================The Our Services Section Ends============================**/
+/**=========================The Our About Section start ============================**/
+.about-section{
+ background: white;
+}
+.card-about {
+  position: relative;
+  margin-top: 20px;
+  
+}
+
+.card-about img {
+  height: 450px;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card-about-title p {
+  padding-bottom:0.3rem;
+  font-size:2rem;
+  padding-top: 8rem;
+}
+.card-about-title h2{
+  padding-top: 2rem;
+}
+.card-about-title {
+  height: 5rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom:0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  transition: 0.5s;
+}
+
+.card-about:hover .card-about-title {
+  height: 100%;
+}
+.about-course{
+  background-image: url('img_4.jpg');
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.about-course .about-course-title{
+   background-color: rgba(0, 0, 0, 0.4);
+   height: 500px;
+   width: 100%;
+   padding: 3rem 0rem 3rem 0;
+   color: white;
+}
+.about-conetnt-section{
+  background-image: url('img_3.jpg');
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.about-conetnt-section .about-content-title{
+  background-color: rgba(0, 0, 0, 0.4);
+   height: auto;
+   width: 100%;
+   padding: 3rem 0rem 3rem 0;
+   color: white;
+}
+.about-botton-section{
+  height: 50px;
+  width: 100%;
+  background-color: #ff7350;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.4rem;
+  text-align: center;
+  border: 1.2px solid #ff7350;
+  border-radius: 10px;
+}
+/**=========================The Our About Section Ends =============================**/
+
+/**========================The our Course Section start =============================**/
+.our-course{
+  background: whitesmoke;
+}
+.box-1{
+  background-image:url('degree1.jpg');
+  background-attachment: scroll;
+  background-size: cover;
+  height: 20rem;
+  width: 100%;
+  position: relative;
+}
+.box-2{
+  background-image: url('degree1.jpg');
+  background-attachment: scroll;
+  background-size: cover;
+  height: 20rem;
+  width: 100%;
+  position: relative;
+}
+.box-3{
+  background-image: url('degree1.jpg');
+  background-attachment: scroll;
+  background-size: cover;
+  height: 20rem;
+  width: 100%;
+  position: relative;
+}
+.box-4{
+  background-image: url('degree1.jpg');
+  background-attachment: scroll;
+  background-size: cover;
+  height: 20rem;
+  width: 100%;
+  position: relative;
+}
+
+.box-1 .box-child{
+  background-color: rgba(0, 51, 102, 0.9);
+  height: 20rem;
+  width: 100%;
+  position: absolute;
+}
+.box-child #ba-bg{
+     border-radius: 50%;
+     height: 100px;
+     width: 100px;
+     position: absolute;
+     left: 25%;
+     top: 5%;
+}
+.box-child .card-body{
+  position: absolute;
+  left: 35%;
+  color: #fff;
+  font-weight: bold;
+  top: 40%;
+  font-size: 2rem;
+  text-align: center;
+}
+.box-1 .btnn{
+  position: absolute;
+  top: 70%;
+  left: 23%;
+  text-align: center;
+  text-decoration: none;
+  height: 40px;
+  width: 10rem;
+  color: #fff;
+  font-size: 1rem;
+  padding-top: 0.4rem;
+  background-color: rgba(0, 0, 0, 1);
+}
+/** box-2**/
+.box-2 .box-child{
+  background-color: rgba(0, 51, 102, 0.9);
+  height: 20rem;
+  width: 100%;
+  position: absolute;
+}
+.box-2 .btnn{
+  position: absolute;
+  top: 70%;
+  left: 23%;
+  text-align: center;
+  text-decoration: none;
+  height: 40px;
+  width: 10rem;
+  color: #fff;
+  font-size: 1rem;
+  padding-top: 0.4rem;
+  background-color: rgba(0, 0, 0, 1);
+}
+.box-child .card-body1{
+  position: absolute;
+  left: 30%;
+  color: #fff;
+  font-weight: bold;
+  top: 45%;
+  font-size: 2rem;
+  text-align: center;
+}
+/** box-3**/
+.box-3 .box-child{
+  background-color: rgba(0, 51, 102, 0.9);
+  height: 20rem;
+  width: 100%;
+  position: absolute;
+}
+.box-child .card-body3{
+  position: absolute;
+  left: 38%;
+  color: #fff;
+  font-weight: bold;
+  top: 45%;
+  font-size: 2rem;
+  text-align: center;
+}
+.box-3 .btnn{
+  position: absolute;
+  top: 70%;
+  left: 23%;
+  text-align: center;
+  text-decoration: none;
+  height: 40px;
+  width: 10rem;
+  color: #fff;
+  font-size: 1rem;
+  padding-top: 0.4rem;
+  background-color: rgba(0, 0, 0, 1);
+}
+/** box-4**/
+.box-4 .box-child{
+  background-color: rgba(0, 51, 102, 0.9);
+  height: 20rem;
+  width: 100%;
+  position: absolute;
+}
+.box-child .card-body4{
+  position: absolute;
+  left: 28%;
+  color: #fff;
+  font-weight: bold;
+  top: 45%;
+  font-size: 2rem;
+  text-align: center;
+}
+.box-4 .btnn{
+  position: absolute;
+  top: 70%;
+  left: 23%;
+  text-align: center;
+  text-decoration: none;
+  height: 40px;
+  width: 10rem;
+  color: #fff;
+  font-size: 1rem;
+  padding-top: 0.4rem;
+  background-color: rgba(0, 0, 0, 1);
+}
+/**========================The Our Course Section Ends ===============================**/
+/**===========================The Count Section start ================================**/
+.count-section{
+  background-color: rgba(173, 1, 25, 1);
+  position: relative;
+  width: 100%;
+  height: 300px auto;
+}
+.container-count{
+ background-color: rgba(173, 1, 25, 1);
+  width: 100%;
+  padding-top: 1.7rem;
+  height: 300px auto;
+  color: rgba(255,255,255,1);
+  transform: translateY(-33px);
+  border-top-left-radius:28px;
+  border-top-right-radius: 28px;
+}
+/**===========================The Count SEction end ===================================*/
+/**============================ The Student Review =================================**/
+.student-say{
+  background-image: url('degree2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  height:auto;
+  width: 100%;
+  position: relative;
+}
+.student-say .container-student{
+  background-color: rgba(0,0,0,0.5);
+  height: auto;
+  padding-left: 2.5rem;
+  padding-bottom: 2.5rem;
+  width: 100%;
+}
+
+/**============================ The Student Review =================================**/
+/**=============================The Conatct us section start==============================**/
+.card-contact{
+  height: 15rem;
+  width: 100%;
+  border:1px solid white;
+  background: rgba(238, 237, 237,0.2);
+  position: relative;
+}
+.card-contact .card-icon{
+    height: 5.5rem;
+    width: 5.5rem;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 100%;
+    position: relative;
+    top: -2rem;
+}
+.card-icon i{
+  font-size: 2rem;
+  color: #e13237;
+  position: relative;
+  left: 1.7rem;
+  top: 1.5rem;
+}
+/**=============================The Conatct us section ends==============================**/
+/**=============================The Home Section start===================================**/
+.under{
+  height: 0.1rem;
+  width: 11rem;
+  background-color: #e13237;
+}
+.card-home-ask{
+  background-color: #fef1e0;
+  height: auto;
+  width: 100%;
+  margin-top: 1.8rem;;
+  text-align: center;
+  padding-bottom: 1.2rem;
+}
+/**=============================The Home Section ends===================================**/
+/**======================== The Our Teacher Feculity Home===============================**/
+.teacher-section{
+  background-image: url('hero.jpg');
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-position: center center;
+  height: auto;
+  width: 100%;
+}
+.teacher-section .teacher-bg {
+  background-color: rgba(0,0, 0, 0.7);
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+  /**The Slider Start**/
+.testimonial{
+  padding: 70px 30px 50px;
+  margin: 50px 30px 30px;
+  /* border: 1px solid #ea816b; */
+  position: relative;
+  background-color: rgba(0,0, 0, 0.7);
+}
+.testimonial .pic{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  /* border: 5px solid #c7373c; */
+  overflow: hidden;
+  margin: 0 auto;
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+}
+.testimonial .pic img{
+  width: 100%;
+  height: auto;
+}
+.testimonial .description{
+  font-size: 15px;
+  /* color: #838383; */
+  color: rgba(131,131,131,1);
+  line-height: 25px;
+  text-align: justify;
+  margin: 0;
+  position: relative;
+  font-size: 1rem;
+}
+
+.testimonial .title{
+  display: inline-table;
+  padding: 10px;
+  margin: 0 auto;
+  background: #fff;
+  border: 3px solid rgba(255, 255, 255, 1);
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(1, 22, 50, 1);
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  right: 0;
+}
+.testimonial .post{
+  font-size: 15px;
+  color: rgba(1, 22, 50, 1);
+}
+.owl-theme .owl-controls{
+  width: 100%;
+  height: 50px;
+  opacity: 1;
+  position: absolute;
+  top: 38%;
+}
+.owl-theme .owl-controls .owl-buttons div{
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 1) !important;
+  color: rgba(231, 240, 255, 1);
+}
+.owl-prev{
+  position: absolute;
+  left: -5%;
+}
+.owl-next{
+  position: absolute;
+  right: -5%;
+}
+.owl-prev:after,
+.owl-next:after{
+  content: "\f104";
+  font-family: "Font Awesome 5 Free"; font-weight: 900;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+}
+.owl-next:after{ content: "\f105"; }
+
+@media only screen and (max-width: 479px){
+  .testimonial{ padding: 70px 10px 30px; }
+  .testimonial .description:before{ top: -20px }
+  .testimonial .title{ font-size: 12px; }
+  .testimonial .post{ font-size: 11px; }
+
+}
+
+@media (max-width:768px) {
+  #subscriber-img{
+    position: relative;
+     top: -1.9rem !important;
+  }
+}
