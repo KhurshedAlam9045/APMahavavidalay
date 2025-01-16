@@ -22,6 +22,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+        <!-- Preloader -->
+    <div class="loader-mask">
+        <div class="loader">
+            <div>Loading...</div>
+            <div>Loading...</div>
+        </div>
+    </div>
+    <!-- Preloader -->
     <!-- Header Section -->
     <header class="py-3 sticky sticky-top" style="background-color: var(--top-header-bg);padding: 0px; margin: 0px;"
         data-toggle="sticky-onscroll">
@@ -251,24 +259,68 @@
         <i class="fa-solid fa-arrow-up"></i>
     </a>
     <!-- Scroll Top End-->
-    <!-- The Modal start-->
-    <div class="modal" id="myModal" data-bs-backdrop="static">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <!-- Modal body -->
+     <!-- Modal body -->
                 <div class="modal-body">
-                    <img src="hero.jpg" alt="Image Preview"
-                        style="width:100%; height:auto;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 p-3 mb-3 text-center">
+                                <div class="card"
+                                    style="background-color:#33292e;border:1px solid var(--text-color);height:18rem;">
+                                    <img src="hero.jpg" alt="Image Preview"
+                                        style="width:100px; height:100px;border-radius:50%;position: relative;top:1rem;left:7.2rem;">
+                                    <div class="card-body mt-4 flex-column text-white">
+                                        <h4 style="font-weight:bold;"> <b>B.A Course</b> </h4>
+                                        <a href="register.html"
+                                            class="btn btn-info text-white w-75 mt-4">Click here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 p-3 mb-3 text-center">
+                                <div class="card"
+                                    style="background-color:#33292e;border:1px solid var(--text-color);height:18rem;">
+                                    <img src="hero.jpg" alt="Image Preview"
+                                        style="width:100px; height:100px;border-radius:50%;position: relative;top:1rem;left:7.2rem;">
+                                    <div class="card-body mt-4 flex-column text-white">
+                                        <h4 style="font-weight:bold;"> <b>B.Sc Course</b> </h4>
+                                        <a href="register.html"
+                                            class="btn btn-info text-white w-75 mt-4">Click here</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 p-3 mb-3 text-center">
+                                <div class="card"
+                                    style="background-color:#33292e;border:1px solid var(--text-color);height:18rem;">
+                                    <img src="hero.jpg" alt="Image Preview"
+                                        style="width:100px; height:100px;border-radius:50%;position: relative;top:1rem;left:7.2rem;">
+                                    <div class="card-body mt-4 flex-column text-white">
+                                        <h4 style="font-weight:bold;"> <b>B.Com Course</b> </h4>
+                                        <a href="register.html"
+                                            class="btn btn-info text-white w-75 mt-4">Click here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="text-center">
+                        <img src="new-gif.gif" alt="" class="img-fluid"
+                            style="height: 2rem;">
+                        <a href="register.html" class="text-decoration-none mx-2"
+                            style="color:rgba(255,255,255,1);font-size:1.2rem;background-color:var(--top-header-bg);height:
+                        2.5rem;padding:.8rem 0.8rem 0.8rem 0.8rem;font-weight:700;">CLICK
+                            HERE FOR NEW STUDENT REGISTRATION</a>
+                    </div>
+                    <hr>
+                    <div class="text-center">
+                        <p style="color:var(--text-color);"><b>for helpline Number</b> : +91,817-495-5112</p>
+                    </div>
                 </div>
                 <!-- Modal footer -->
+
             </div>
         </div>
     </div>
-
+    <!--model ends-->
     
     <script type="text/javascript">
         $(window).on('load', function() {
@@ -328,6 +380,11 @@
                 navigationText: ["", ""],
                 autoPlay: true
             });
+        });
+        $(window).load(function() {
+            // Preloader
+            $('.loader').fadeOut();
+            $('.loader-mask').delay(500).fadeOut('slow');
         });
     </script>
 </body>
