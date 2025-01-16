@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
 
 *{
@@ -17,6 +18,65 @@
      --top-text-color:rgba(255,255,255,1);
      --top-dropdown-bg:rgba(173, 1, 25, 0.5);
 }
+
+/**The Loader Css Start**/
+.loader-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 99999;
+}
+
+.loader {
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  width: 200px;
+  height: 200px;
+  font-size: 0;
+  color: var(--text-color);
+  display: inline-block;
+  margin: -25px 0 0 -25px;
+  text-indent: -9999em;
+}
+.loader div{
+  font-size: 3rem;
+  color: var(--text-color);
+  justify-content: center;
+  align-items: center;
+  animation-name: loader;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  
+}
+@keyframes loader {
+   from{
+      color: #767676;
+      font-weight: bold;
+   }
+   to{
+      color: var(--text-color);
+      font-weight: bold;
+   }
+}
+.loader div{
+  display: inline-block;
+  float: none;
+  color: var(--text-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+}
+
+/**The Loader Css end**/
+
+
 .dropdown .dropdown-menu{
   /* background-image: url('images/hero.jpg'),rgba(0,0, 0, 0.85); */
   /* background-image: url('images/hero.jpg'), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)); */
@@ -402,7 +462,7 @@
 }
 .about-course{
   background-image: url('img_4.jpg');
-  height: 500px;
+  height: auto;
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
@@ -410,7 +470,7 @@
 }
 .about-course .about-course-title{
    background-color: rgba(0, 0, 0, 0.4);
-   height: 500px;
+   height: auto;
    width: 100%;
    padding: 3rem 0rem 3rem 0;
    color: white;
@@ -794,5 +854,20 @@
   #subscriber-img{
     position: relative;
      top: -1.9rem !important;
+  }
+  .hidden{
+    display: none;
+  }
+  .loader {
+    position: absolute;
+    left: 28%;
+    top: 40%;
+    width: 200px;
+    height: 200px;
+    font-size: 0;
+    color: var(--text-color);
+    display: inline-block;
+    margin: -25px 0 0 -25px;
+    text-indent: -9999em;
   }
 }
