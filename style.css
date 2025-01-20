@@ -739,6 +739,30 @@
   padding-bottom: 1.2rem;
 }
 /**=============================The Home Section ends===================================**/
+/**=============================The faculty-banner Section start =======================**/
+  .faculty-banner{
+    background-image: url('college-banner4.jpg');
+    width: 100%;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+  }
+  .container-banner{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 500px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 13rem;
+    color: rgba(255, 255, 255, 1);
+  }
+.container-banner h1{
+  color: rgba(255,255,255,1);
+  font-size: 2rem;
+  font-weight: bold;
+  
+}
+/**=============================The faculty-banner Section ends =======================**/
 /**======================== The Our Teacher Feculity Home===============================**/
 .teacher-section{
   background-image: url('hero.jpg');
