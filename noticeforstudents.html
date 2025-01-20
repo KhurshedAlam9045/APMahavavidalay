@@ -94,51 +94,261 @@
         </nav>
     </header>
     <!--==================Main pages Start ===========================-->
-    <!-- @section('main-page')
-    @show -->
-    <div class="register-form-bg">
-        <div class="register-form-desc">
-            <h2>Login Form</h2>
+   <div class="faculty-banner">
+        <div class="container-banner">
+            <h1 class="text-center" style="font-size:3rem;">Our College Upcoming Events</h1>
+
         </div>
     </div>
-    <div class="common-bg">
-        <div class="common-back d-flex">
-            <a href="register.html"><img src="new-gif.gif" alt=""
-                    class="img-fluid">&nbsp;&nbsp;Click to new register</a>
-        </div>
-    </div>
-    <div class="login-section">
-        <div class="container pt-5 pb-5">
-          <!-- <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
-                    <h5 style="color:black;text-align:center;font-size:2rem;font-weight:bold;"><b>Login Form</b></h5>
-                </div>
-            </div>  -->
+    <div class="container-fluid bg-light">
+        <div class="container" style="max-width:1200px;">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <form action="">
-                        <div class="form-group  mb-3">
-                            <label for="" style="color:#777777;font-size:1.2rem;">Email<sup
-                                    class="text-danger">*</sup></label>
-                            <input type="email" class="mb-2" id="register-input" placeholder="'Enter email id.">
-                        </div>
-                        <div class="form-group  mb-3">
-                            <label for="" style="color:#777777;font-size:1.2rem;">Password<sup
-                                    class="text-danger">*</sup></label>
-                            <input type="password" class="mb-2" id="register-input" placeholder="'Enter password.">
-                        </div>
-                        <div class="">
-                            <a href="" class="float-end mb-3 text-decoration-none fw-bold">forget password</a>
-                        </div>
-                        <button type="submit" id="register-btn">Login</button>
-                    </form>
+                <div class="col-lg-12 col-md-12 col-sm-12 p-1" style="background-color:var(--text-color);">
+                    <section id="departments">
+                        <h2 class="text-center text-white">Upcoming Events</h2>
+                    </section>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <img src="B5.jpeg" alt="" class="img-fluid">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center p-1 pt-3" style="background: navy;color:white;">
+                    <section id="departement">
+                        <p class="text-center text-white fs-5">A.P Mahavidhalay Laxmipur Kushinagar</p>
+                    </section>
                 </div>
+                <!--The Start of Notice Events Coming Soon Section start-->
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-3 p-3">
+                    <h2 class="text-center mt-3" style="color: navy;">Upcoming Events</h2>
+                    <div style="border-bottom: 2px solid red;width:100%;text-align:center;margin-top:0.8rem;"></div>
+
+                    <input type="radio" class="btn-check" name="btnradio" autocomplete="off" checked>
+                    <label onclick="setBox(this,'btnradio1')" class="btn btn-outline-danger mt-3 w-100" for="btnradio1">
+                        &laquo;&laquo; &nbsp;Our College Events</label>
+
+                    <input type="radio" class="btn-check  mt-2" name="btnradio" autocomplete="off">
+                    <label onclick="setBox(this,'btnradio2')" class="btn btn-outline-danger mt-3 w-100"
+                        for="btnradio2">&laquo;&laquo; &nbsp;Notice for Students</label>
+
+                    <input type="radio" class="btn-check  mt-2" name="btnradio" autocomplete="off">
+                    <label onclick="setBox(this,'btnradio3')" class="btn btn-outline-danger mt-3 w-100"
+                        for="btnradio3">&laquo;&laquo; &nbsp;Admission Open Notice</label>
+
+                    <input type="radio" class="btn-check  mt-2" name="btnradio" autocomplete="off">
+                    <label onclick="setBox(this,'btnradio4')" class="btn btn-outline-danger mt-3 w-100"
+                        for="btnradio4">&laquo;&laquo; &nbsp;Holiday Notice 2024-25</label>
+
+                    <input type="radio" class="btn-check  mt-2" name="btnradio" autocomplete="off">
+                    <label onclick="setBox(this,'btnradio5')" class="btn btn-outline-danger mt-3 w-100"
+                        for="btnradio5">&laquo;&laquo; &nbsp;Our College Tender Notice</label>
+
+
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 hidden">
+                    <div style="height: 530px;border-left:2px solid navy;">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-8 col-sm-12 mb-3 p-3">
+                    <div style="border-bottom: 2px solid red;width:100%;text-align:center;margin-top:4.2rem;">
+                    </div>
+                    <div class="table-responsive" id="btnradio1">
+                        <table class="table table-hover table-striped table table-bordered border-primary mt-3">
+                            <thead class="text-center">
+                                <tr>
+                                    <th style="background: navy;color:white;">Date</th>
+                                    <th style="background: navy;color:white;">Subject</th>
+                                    <th style="background: navy;color:white;">Download</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>15/08/2024</td>
+                                    <td>Celebrating 78th Independence day of India</td>
+                                    <td><a type="button" class="btn btn-danger mx-4" href="{{ url('gallery') }}">View</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15/08/2024</td>
+                                    <td>Celebrating 78th Independence day of India</td>
+                                    <td><a type="button" class="btn btn-danger mx-4" href="{{ url('gallery') }}">View</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15/08/2024</td>
+                                    <td>Celebrating 78th Independence day of India</td>
+                                    <td><a type="button" class="btn btn-danger mx-4" href="{{ url('gallery') }}">View</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15/08/2024</td>
+                                    <td>Celebrating 78th Independence day of India</td>
+                                    <td><a type="button" class="btn btn-danger mx-4" href="{{ url('gallery') }}">View</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15/08/2024</td>
+                                    <td>Celebrating 78th Independence day of India</td>
+                                    <td><a type="button" class="btn btn-danger mx-4" href="{{ url('gallery') }}">View</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15/08/2024</td>
+                                    <td>Celebrating 78th Independence day of India</td>
+                                    <td><a type="button" class="btn btn-danger mx-4" href="{{ url('gallery') }}">View</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15/08/2024</td>
+                                    <td>Celebrating 78th Independence day of India</td>
+                                    <td><a type="button" class="btn btn-danger mx-4" href="{{ url('gallery') }}">View</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!--Student Notice-->
+                    <div class="table-responsive d-none" id="btnradio2">
+                        <table class="table table-hover table-striped table table-bordered border-primary mt-3">
+                            <thead class="text-center">
+                                <tr>
+                                    <th style="background: navy;color:white;">Date</th>
+                                    <th style="background: navy;color:white;">Subject</th>
+                                    <th style="background: navy;color:white;">Download</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>15/01/2025</td>
+                                    <td>Classes of Self Finance Students for B.Sc. & B.Com. Semester - I</td>
+                                    <td><a type="button" class="btn btn-danger mx-4" href="{{ url('gallery') }}">View</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15/01/2025</td>
+                                    <td>Classes of Self Finance Students for B.Sc. & B.Com. Semester - I</td>
+                                    <td><a type="button" class="btn btn-danger mx-4" href="{{ url('gallery') }}">View</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!---Student Notice-->
+                    <!--Admission notice-->
+                    <div class="table-responsive d-none" id="btnradio3">
+                        <table class="table table-hover table-striped table table-bordered border-primary mt-3">
+                            <thead class="text-center">
+                                <tr>
+                                    <th style="background: navy;color:white;">Date</th>
+                                    {{-- <th style="background: navy;color:white;">Subject</th> --}}
+                                    <th style="background: navy;color:white;">Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>15/01/2025</td>
+                                    <td> Notice regarding admission to B.A., B.Sc. B.Com semester 3 and semester 5
+                                        admissions</td>
+
+                                </tr>
+                                <tr>
+                                    <td>15/01/2025</td>
+                                    <td> Notice regarding admission to B.A., B.Sc. B.Com semester 3 and semester 5
+                                        admissions</td>
+                                </tr>
+                                <tr>
+                                    <td>15/01/2025</td>
+                                    <td> Notice regarding admission to B.A., B.Sc. B.Com semester 3 and semester 5
+                                        admissions</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--Admission notice Ends-->
+                    <!--Holiday Notice start-->
+                    <div class="table-responsive d-none" id="btnradio4">
+                        <table class="table table-hover table-striped table table-bordered border-primary mt-3">
+                            <thead class="text-center">
+                                <tr>
+                                    <th style="background: navy;color:white;">Date</th>
+                                    <th style="background: navy;color:white;">Holiday Details</th>
+                                    <th style="background: navy;color:white;">View</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>28/03/2025</td>
+                                    <td>Holiday Notice (Muharram)</td>
+                                    <td><a type="button" class="btn btn-danger mx-4"
+                                            href="{{ url('gallery') }}">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>28/03/2025</td>
+                                    <td>Holiday Notice (Muharram)</td>
+                                    <td><a type="button" class="btn btn-danger mx-4"
+                                            href="{{ url('gallery') }}">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>28/03/2025</td>
+                                    <td>Holiday Notice (Muharram)</td>
+                                    <td><a type="button" class="btn btn-danger mx-4"
+                                            href="{{ url('gallery') }}">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>28/03/2025</td>
+                                    <td>Holiday Notice (Muharram)</td>
+                                    <td><a type="button" class="btn btn-danger mx-4"
+                                            href="{{ url('gallery') }}">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>28/03/2025</td>
+                                    <td>Holiday Notice (Muharram)</td>
+                                    <td><a type="button" class="btn btn-danger mx-4"
+                                            href="{{ url('gallery') }}">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>28/03/2025</td>
+                                    <td>Holiday Notice (Muharram)</td>
+                                    <td><a type="button" class="btn btn-danger mx-4"
+                                            href="{{ url('gallery') }}">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td>28/03/2025</td>
+                                    <td>Holiday Notice (Muharram)</td>
+                                    <td><a type="button" class="btn btn-danger mx-4"
+                                            href="{{ url('gallery') }}">View</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--Holiday Notice Ends-->
+                    <!--Tender Notice start-->
+                    <div class="table-responsive d-none" id="btnradio5">
+                        <table class="table table-hover table-striped table table-bordered border-primary mt-3">
+                            <thead class="text-center">
+                                <tr>
+                                    <th style="background: navy;color:white;">Date</th>
+                                    <th style="background: navy;color:white;">Tender</th>
+                                    <th style="background: navy;color:white;">View</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <!--Tender Notice ends-->
+                </div>
+                <!--The Start of Notice Events Coming Soon Section Ends-->
+
             </div>
         </div>
     </div>
+
+    <script>
+        function setBox(e, id) {
+
+            let el = document.getElementById(id);
+            el.classList.toggle("d-none");
+
+            console.log(el);
+
+        }
+    </script>
     <!--=====================Main pages ends ===============================-->
     <!--====================The Footer Top Section start=========================-->
     <div id="top-footer">
